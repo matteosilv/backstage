@@ -1,5 +1,24 @@
 # @backstage/plugin-scaffolder-backend
 
+## 1.4.0-next.2
+
+### Minor Changes
+
+- 4baf8a4ece: Update GitLab Merge Request Action to allow source branch to be deleted
+- 2db07887cb: Added two new scaffolder actions: `github:repo:create` and `github:repo:push`
+
+### Patch Changes
+
+- af02f54483: new setUserAsOwner flag for publish:gitlab action
+
+  The field default is `false`. When true it will use the token configured in the gitlab integration for the matching host, to try and set the user logged in via `repoUrlPicker` `requestUserCredentials` OAuth flow as owner of the repository created in GitLab.
+
+- 679b32172e: Updated dependency `knex` to `^2.0.0`.
+- Updated dependencies
+  - @backstage/catalog-model@1.1.0-next.2
+  - @backstage/backend-common@0.14.1-next.2
+  - @backstage/plugin-catalog-backend@1.2.1-next.2
+
 ## 1.4.0-next.1
 
 ### Patch Changes
